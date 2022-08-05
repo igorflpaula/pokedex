@@ -94,68 +94,69 @@ const renderPokemon = async (pokemon) => {
                 typeOne.style.backgroundColor = '#5090d6';
                 break;
         }
-
-        switch(data['types']['1']['type']['name']){
-            case 'bug':
-                typeTwo.style.backgroundColor = '#91c12f';
-                break;
-            case 'dark':
-                typeTwo.style.backgroundColor = '#5a5465';
-                break;
-            case 'dragon':
-                typeTwo.style.backgroundColor = '#0b6dc3';
-                break;
-            case 'electric':
-                typeTwo.style.backgroundColor = '#f4d23c';
-                break;
-            case 'fairy':
-                typeTwo.style.backgroundColor = '#ec8fe6';
-                break;
-            case 'fighting':
-                typeTwo.style.backgroundColor = '#ce416b';
-                break;
-            case 'fire':
-                typeTwo.style.backgroundColor = '#ff9d55';
-                break;
-            case 'flying':
-                typeTwo.style.backgroundColor = '#89aae3';
-                break;
-            case 'ghost':
-                typeTwo.style.backgroundColor = '#5269ad';
-                break;
-            case 'grass':
-                typeTwo.style.backgroundColor = '#63bc5a';
-                break;
-            case 'ground':
-                typeTwo.style.backgroundColor = '#d97845';
-                break;
-            case 'ice':
-                typeTwo.style.backgroundColor = '#73cec0';
-                break;
-            case 'normal':
-                typeTwo.style.backgroundColor = '#919aa2';
-                break;
-            case 'poison':
-                typeTwo.style.backgroundColor = '#b567ce';
-                break;
-            case 'psychic':
-                typeTwo.style.backgroundColor = '#fa7179';
-                break;
-            case 'rock':
-                typeTwo.style.backgroundColor = '#c5b78c';
-                break;
-            case 'steel':
-                typeTwo.style.backgroundColor = '#5a8ea2';
-                break;
-            case 'water':
-                typeTwo.style.backgroundColor = '#5090d6';
-                break;
-        }
         
         if(data['types']['1']){
             typeTwo.innerHTML = data['types']['1']['type']['name'];
+
+            switch(data['types']['1']['type']['name']){
+                case 'bug':
+                    typeTwo.style.backgroundColor = '#91c12f';
+                    break;
+                case 'dark':
+                    typeTwo.style.backgroundColor = '#5a5465';
+                    break;
+                case 'dragon':
+                    typeTwo.style.backgroundColor = '#0b6dc3';
+                    break;
+                case 'electric':
+                    typeTwo.style.backgroundColor = '#f4d23c';
+                    break;
+                case 'fairy':
+                    typeTwo.style.backgroundColor = '#ec8fe6';
+                    break;
+                case 'fighting':
+                    typeTwo.style.backgroundColor = '#ce416b';
+                    break;
+                case 'fire':
+                    typeTwo.style.backgroundColor = '#ff9d55';
+                    break;
+                case 'flying':
+                    typeTwo.style.backgroundColor = '#89aae3';
+                    break;
+                case 'ghost':
+                    typeTwo.style.backgroundColor = '#5269ad';
+                    break;
+                case 'grass':
+                    typeTwo.style.backgroundColor = '#63bc5a';
+                    break;
+                case 'ground':
+                    typeTwo.style.backgroundColor = '#d97845';
+                    break;
+                case 'ice':
+                    typeTwo.style.backgroundColor = '#73cec0';
+                    break;
+                case 'normal':
+                    typeTwo.style.backgroundColor = '#919aa2';
+                    break;
+                case 'poison':
+                    typeTwo.style.backgroundColor = '#b567ce';
+                    break;
+                case 'psychic':
+                    typeTwo.style.backgroundColor = '#fa7179';
+                    break;
+                case 'rock':
+                    typeTwo.style.backgroundColor = '#c5b78c';
+                    break;
+                case 'steel':
+                    typeTwo.style.backgroundColor = '#5a8ea2';
+                    break;
+                case 'water':
+                    typeTwo.style.backgroundColor = '#5090d6';
+                    break;
+            }
         }else{
             typeTwo.innerHTML = '-';
+            typeTwo.style.backgroundColor = '#444';
         }
 
     }else{
